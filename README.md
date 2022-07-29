@@ -78,7 +78,7 @@ clean up\
 In the case of any issues during installation, reference to [https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html] which provides several alternatives.
 \
 **Step 4:**\
-To run the PRISM script download the file **PRISM.ipynb** and change the directory variable from line 16 to the path of your repository.
+To run the PRISM script download the file **PRISM.ipynb** and change the directory variable of line 16 to the path of your repository.
 
 
 
