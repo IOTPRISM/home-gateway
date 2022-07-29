@@ -2,7 +2,7 @@
 
 ***1 - Software Analysis:***\
 \
-The diagram below is an overview of the system's structure following detailed explanations of each part of the system.
+The diagram below is an overview of the system's structure, following detailed explanations of each part of the system.
 ![System Overview](SystemOverview.jpg)
 **Data Loader**\
 The Data Loader function is used to load the dataset and process it into the desired data frame. The dataset comprises of patients which are selected when calling the function  using the input string  variable ```patient```.  The data is contained in NumPy format, hence the Data Loader scans through the directory of the data and constructs a data frame using the Pandas library. It is important to note that in order to scan the directories, the OS library is used which provides the ```os.scandir()``` function which is responsible for reading the contents of the directories. Also note that the pathlib library is used to obtain the path name of the directories. This is used for the ```numpy.load()``` function accessible by the NumPy library. All of the sensory data are initially stored in the data frame ‘sensors_pd’, where each column represents each of the sensors, and the readings of each sensor are stored in a single row. Since the objective is to construct a data frame for a single sensor, the variable ```Sensor_ID``` is used to select the desired sensor. Afterwards, the sensory data are used to construct a new data frame ```df``` whose columns are time, reading 1 and reading 2. Note that not all sensors have reading 1 or reading 2, hence to ensure correct construction of the data frame, ```if``` statements are used to select the correct column structure. Note that each entry comprising of time and readings comprises of columns for each respectively (i.e column 0 = time, column 1 = Reading 1 etc). The data frame ‘df’ is finally the return variable which in this case is a data frame. \
@@ -41,7 +41,7 @@ These functionalities are all executed within the ```Train_AD()``` function. The
 ***4 - Installation Guide:***\
 \
 **Step 1:**\
-Install the Ubuntu desktop 22.04 LTS on  your IoT device via the official website (https://ubuntu.com/download/raspberry-pi) using the Raspberry pi imager, with the instructions provided in the official ubuntu website (https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview)
+Install the Ubuntu desktop 22.04 LTS on  your IoT device via the official website [https://ubuntu.com/download/raspberry-pi] using the Raspberry pi imager, with the instructions provided in the official ubuntu website [https://ubuntu.com/tutorials/how-to-install-ubuntu-desktop-on-raspberry-pi-4#1-overview]
 \
 \
 **Step 2:**\
@@ -66,7 +66,7 @@ NumPy: $ sudo apt-get install python3-numpy
 Random: $ sudo pip3 install random2
 ```
 PyTorch:\
-regarding to the python version installed (in case it is previous to 3.9) select the correct wheel via (https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS) and download it. Then follow the following steps which represent the installation process of PyTorch 1.11.0 for Python 3.9:
+Initially the correct wheel must be selected (corresponding to the Python version available) via [https://github.com/Qengineering/PyTorch-Raspberry-Pi-64-OS] and downloaded. Then follow the following steps which represent the installation process of PyTorch 1.11.0 for Python 3.9:
 
 download the wheel\
 ```$ gdown https://drive.google.com/uc?id=1ilCdwQX7bq72OW2WF26Og90OpqFX5g_-```\
@@ -75,7 +75,7 @@ install PyTorch 1.11.0\
 clean up\
 ```$ rm torch-1.11.0a0+gitbc2c6ed-cp39-cp39-linux_aarch64.whl```
 
-In the case of any issues during installation, reference to (https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html) which provides several alternatives.
+In the case of any issues during installation, reference to [https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html] which provides several alternatives.
 \
 **Step 4:**\
 Download the PRISM script via:<enter>
