@@ -29,7 +29,7 @@ These functionalities are all executed within the ```Train_AD()``` function. The
 * Hardware component used as testbed : Raspberry Pi 4
 * Server used: Ubuntu desktop 22.04 LTS, Linux
 * Programming Language used: Python 3.9.7
-* Data set used: >>Write proper name<<
+* Data set used: DRI
 * Micro SD card 256 GB
 
 ***3 - Pre requisites:***
@@ -78,7 +78,7 @@ clean up\
 In the case of any issues during installation, reference to [https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html] which provides several alternatives.
 \
 **Step 4:**\
-Download the PRISM script via:<enter>
+For the PRISM script download: PRISM.ipynb
 
 
 
