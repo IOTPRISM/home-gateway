@@ -78,7 +78,7 @@ clean up\
 In the case of any issues during installation, reference to [https://qengineering.eu/install-pytorch-on-raspberry-pi-4.html] which provides several alternatives.
 \
 **Step 4:**\
-For the PRISM script download: PRISM.ipynb
+For the PRISM script download the file: PRISM.ipynb
 
 
 
