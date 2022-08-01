@@ -13,7 +13,7 @@ from pathlib import Path
 from random import randint
 
 
-directory = r'C:\Users\savva\OneDrive\Desktop\npy'
+directory = r'$yourpath'
 patient_ID = ['2zbyXzYNKPwiPtjaA2L64o.npy','3hY7Mp7u9YPo1xMARSxLhc.npy','4h1dAuzg9rdrhyojwxUS26.npy']
 colums1 = ['time','end time']
 colums2 = ['time','end time','Reading 1']
