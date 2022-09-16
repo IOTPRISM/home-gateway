@@ -6,7 +6,7 @@ The home gateway software is part of the Privacy Preserving IoT Security Managem
 The home gateway software consists of 5 components: the Data Loader module, the Anomaly Insertion module, the Data Pre-processing module, the AI module, the Anomaly Detection module.
 We report an overview of PRISM and an explanation of each component of the system (Figure below).
 
-![System Overview](SystemOverview.jpg)
+![System Overview](Diagram.jpg)
 **Data Loader**\
 The Data Loader module is used to load the dataset and convert it into the desired data frame. The data should be in NumPy format. The Data Loader scans through the directory of the data and constructs a data frame using the Pandas library. All of the data from the IoT sensors are initially stored in the data frame ```sensors_pd```, where each column represents one sensor and the readings of each sensor are stored in a single element of the first row. Since the objective is to construct the data frame of a single sensor, we use the variable ```Sensor_ID``` to select the desired sensor. The sensory data are used to construct a new data frame ```df``` whose columns are time, reading 1 and reading 2.\
 \
