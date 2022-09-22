@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 from torch import optim
 from torch.autograd import Variable 
 from pathlib import Path
-from random import randint
+from random import randint, gauss
 import torch.nn as nn
 import torch.nn.functional as F
 from statistics import mode, mean
